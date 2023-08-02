@@ -23,6 +23,12 @@ from tflite_runtime.interpreter import Interpreter
 3. Download and install Git, once again make sure it's set in the system PATH.
 4. Download the latest Python release, and make sure you add it to the system PATH aswell.
 5. Browse to the install location of Python, make a copy of python.exe and rename is to python3.exe.
-6. Download the following pip packages: `pip install pybind11 numpy wheel`
-7. Clone the Tensorflow repository, switch to the branch you would like to build _(for example r2.12)_ and run the following command in a terminal: `sh tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh windows`
-8. Install the .whl file using pip.
+6. Download the following pip packages:
+   ```
+   pip install pybind11 numpy wheel
+   ```
+8. Clone the Tensorflow repository, switch to the branch you would like to build _(for example r2.12)_ and run the following command in a terminal:
+   ```
+   sh tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh windows
+   ```
+10. Install the .whl file using pip.
